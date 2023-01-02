@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/green_blue"
+    tools:context=".view.filterFragment">
+
+
+    <TextView
+        android:id="@+id/title_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_filter"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:padding="16dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipgroup_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_alive"
+                style="@style/ChipStyle"
+                android:text="@string/txt_alive"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_dead"
+                style="@style/ChipStyle"
+                android:text="@string/txt_dead"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_unknown"
+                style="@style/ChipStyle"
+                android:text="@string/txt_unknown"/>
+
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/title_gender"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/clear_radioCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_limpiar"
+                android:textColor="@color/text_blue_color"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <RadioGroup
+            android:id="@+id/radio_group_Gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_female"
+                style="@style/RadioButtonStyle"
+                android:layout_marginStart="0dp"
+                android:background="@drawable/radiobutton_female_selector"
+                android:text="@string/txt_female"/>
+
+            <RadioButton
+                android:id="@+id/radio_male"
+                style="@style/RadioButtonStyle"
+                android:background="@drawable/radiobutton_male_selector"
+                android:text="@string/txt_male"/>
+
+            <RadioButton
+                android:id="@+id/radio_genderless"
+                style="@style/RadioButtonStyle"
+                android:background="@drawable/radiobutton_genderless_selector"
+                android:text="@string/txt_genderless"/>
+
+            <RadioButton
+                android:id="@+id/radio_unknown"
+                style="@style/RadioButtonStyle"
+                android:background="@drawable/radiobutton_unknown_selector"
+                android:text="@string/txt_unknown"/>
+            
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_apply_filter"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/background_button"
+        android:backgroundTint="@null"
+        android:text="@string/title_apply"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>

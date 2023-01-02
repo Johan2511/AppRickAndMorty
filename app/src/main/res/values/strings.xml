@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">AppRickYMorty</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_hint">Buscar Personaje</string>
+    <string name="title_characters">Personajes</string>
+    <string name="title_reset">Reiniciar</string>
+    <string name="text_error">%1$d - Personajes no encontrados!</string>
+    <string name="title_filter">Filtro</string>
+    <string name="txt_alive">Live</string>
+    <string name="txt_dead">Dead</string>
+    <string name="txt_unknown">Unknown</string>
+    <string name="title_gender">Gender</string>
+    <string name="txt_female">Female</string>
+    <string name="txt_male">male</string>
+    <string name="txt_genderless">genderless</string>
+    <string name="title_apply">APPLY</string>
+    <string name="title_origin">Origin</string>
+    <string name="title_location">Location</string>
+    <string name="title_episodes">episodes</string>
+    <string name="title_limpiar">Limpiar</string>
+</resources>
