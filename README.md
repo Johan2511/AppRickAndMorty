@@ -27,11 +27,9 @@ Para este proyecto se uso el patron de arquitectura MVVM
 - [Picasso](https://github.com/square/picasso) Una potente biblioteca de descarga y almacenamiento en caché de imágenes para Android
 
 
+## Demo
 
-
-
-
-
+![rick y morty](https://user-images.githubusercontent.com/84041579/210410935-da0475e0-d86d-4b0a-a7b0-e399b7d641ea.gif)
 
 
 
